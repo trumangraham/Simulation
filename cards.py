@@ -14,4 +14,17 @@ for i in range(4):
             value = "K"
         deck.append(f"{value} {suits[i]}")
 
-print(deck)
+
+import random
+  
+print ("The original deck is : " + str(deck)) 
+  
+
+for i in range(len(deck)-1, 0, -1): 
+    
+    j = random.randint(0, i + 1)  
+    
+     
+    deck[i], deck[j] = deck[j], deck[i]  
+
+print ("The shuffled deck is : " +  str(deck)) 
